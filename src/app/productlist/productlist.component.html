@@ -1,0 +1,48 @@
+
+<div class="welcome__container">
+
+    <header class="welcome__container__header">
+        <h1 class="welcome__container__header__heading">Product List</h1>
+        
+        </header>
+        <!-- class="welcome__container__center__box" -->
+        <div class="table__container">
+
+&nbsp;
+<div >
+    <h3>Search</h3>
+    <input type="text" [(ngModel)]='searchTerm' class="login__input__box">
+</div>
+<table class="u-margin-top-small">
+
+<tr>
+    <th>Product</th>
+    <th>Code</th>
+    <th>Date</th>
+    <th>Rating</th>
+    <th>Edit</th>
+    
+</tr>
+
+<tr *ngFor="let i of asyncdata | filterpipe:searchTerm">
+
+<td>{{i.Product}}</td>
+<td>{{i.Code}}</td>
+<td>{{i.Date}}</td>
+<td >
+
+<span *ngFor="let e of [].constructor(i.Rating)"><i class="fas fa-star"></i></span>
+
+</td>
+<td><button (click)="navigateedit(i)" class="Edit_button">Edit</button></td>
+</tr>
+
+
+</table>
+
+
+     
+
+
+
+</div>

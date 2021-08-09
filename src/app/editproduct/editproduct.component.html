@@ -1,0 +1,58 @@
+
+<div class="welcome__container">
+
+    <header class="welcome__container__header">
+        <h1 class="welcome__container__header__heading">Product Detail</h1>
+        
+        </header>
+        <!-- class="welcome__container__center__box" -->
+        <div class="table__container">
+            <!-- <div class="table__parent">
+<div>Name</div>
+<div>Date</div>
+
+<div>Rating</div>
+<div>Price</div>
+
+</div> -->
+
+<!-- <div class="">
+
+    <div class="" > {{displayarr.Product}}</div>
+    <div class="" > {{displayarr.Date}}</div>
+
+    <div class="" > {{displayarr.Rating}}</div>
+    <div class="" > {{displayarr.price}}</div>
+</div> -->
+
+ </div>   
+
+<div class="flex__cotainer">
+    <div class="right edit__product__right">
+        <table>
+<tr>
+    <td>Name</td>
+<td>{{displayarr.Product}}</td>
+</tr>
+
+<tr>
+    <td>Date</td>
+<td>{{displayarr.Date}}</td>
+</tr>
+
+
+<tr>
+    <td>Rating</td>
+<td ><span *ngFor="let e of [].constructor(displayarr.Rating)"><i class="fas fa-star"></i></span></td>
+</tr>
+</table>
+</div>
+<div class="left edit__product__left">
+
+<img src="https://i.pcmag.com/imagery/reviews/03aizylUVApdyLAIku1AvRV-39.1605559903.fit_scale.size_760x427.png">
+
+</div>
+</div>
+
+
+

@@ -1,0 +1,52 @@
+
+<div class="welcome__container">
+
+    <header class="welcome__container__header">
+        <h1 class="welcome__container__header__heading">welcome</h1>
+        
+        </header>
+
+        
+<div class="welcome__container__center__box">
+
+<form [formGroup]="loginForm" (ngSubmit)="loginsave()">
+<div class="login__input">
+
+    <label class="login__input__label">Username</label>
+
+    <div class="login__input__element">
+
+        <input type="text" class="login__input__box" formControlName="Username">
+    </div>
+<app-toast *ngIf="!loginForm.get('Username')?.valid &&  loginForm.get('Username')?.touched" [getmessage]="'Username required'"></app-toast>
+</div>
+
+
+<div class="login__input u-margin-top-small">
+
+    <label class="login__input__label">Password</label>
+
+    <div class="login__input__element">
+
+        <input type="password" class="login__input__box" formControlName="Password">
+        <app-toast *ngIf="!loginForm.get('Password')?.valid &&  loginForm.get('Password')?.touched " [getmessage]="'Password required'"></app-toast>
+    </div>
+
+</div>
+
+
+<div class="login__input u-margin-top-small">
+    <label class="login__input__label">&nbsp;</label>
+
+    <div class="login__input__element">
+
+        <input type="submit" value="login" class="Login__bttn">
+
+        <input type="reset" value="cancel" class="Login__bttn">
+    </div>
+
+</div>
+</form>
+</div>
+<app-toast *ngIf="ErrorMssg!=''"[getmessage]="ErrorMssg"></app-toast>
+</div>

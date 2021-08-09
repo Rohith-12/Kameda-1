@@ -1,0 +1,124 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+margin: 0;
+padding:0 ;
+
+}
+.u-margin-top-huge{
+
+    margin-top: 180px;
+
+}
+
+
+.u-margin-top-big{
+    margin-top: 120px;
+    
+}
+
+.u-margin-top-medium{
+
+    margin-top: 80px;
+}
+
+.u-margin-top-small{
+
+    margin-top: 10px;
+}
+
+.login__input__box{
+
+    width: 70%;
+    border-radius: 5px;
+    padding:8px;
+    border: 1px solid #ced4da;
+}
+.welcome__container{
+
+    /* background: red; */
+    border:1px solid;
+    border-radius: 5px;
+   margin: 150px auto;
+    max-width: 80%;
+}
+.welcome__container__header{
+background: #232f3e;
+color: #fff;
+
+}
+.welcome__container__header__heading{
+    padding: 10px;
+    font-size: 22px;
+}
+
+.welcome__container__center__box{
+
+    
+    margin: 20px auto;
+    width: 90%;
+
+}
+.flex__cotainer{
+
+    display: flex;
+}
+button,a{
+    cursor: pointer;
+}
+.Edit_button{
+
+    border:none;
+    color: #fff;
+  border: none;
+  background:#007bff;
+  padding: 10px;
+
+}
+
+
+header{
+
+    background-color: #232f3e;
+    padding: 10px;
+    
+    }
+    
+    .header_container{
+    
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    .header__container__left{
+    
+    
+     /*   background: green;*/
+        width: 70%;
+    }
+    
+    .header__container__right{
+        width: 30%;
+    
+        /*background: blue;
+    */
+    }
+    
+    
+    #header__Logo__heading{
+    
+        font-size: 25px;
+    
+    }
+
+    .header_route{
+
+        font-size: 23px;
+    }
+    
+    .right__alignment{
+        text-align: right;
+    }
+    button{
+
+        cursor: pointer;
+    }

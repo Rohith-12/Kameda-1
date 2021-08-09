@@ -1,0 +1,28 @@
+table {
+    
+  }
+  
+  table td,
+  table th {
+    vertical-align: middle;
+  
+    padding: 1rem;
+    text-align: center;
+  }
+  .table__container{
+padding: 10px;
+  }
+
+  .right__box{
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .edit__product__right{
+      flex-grow: 1;
+  }
+
+  .edit__product__left{
+flex-grow: 1;
+
+  }

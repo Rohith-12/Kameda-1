@@ -1,0 +1,34 @@
+
+<header>
+<div class="header_container">
+
+<div class="header__container__left">
+
+    <a routerLink="/" id="header__Logo__heading">Acme Porduct mamagement</a>
+
+<a routerLink="/" class="header_route">Home</a>
+<a href="" [routerLink]="'/'" class="header_route" *ngIf="!(LoginStatus | async) as LoginStatus">Product List</a>
+<a href="" [routerLink]="'/ProductList'" class="header_route" *ngIf="(LoginStatus | async) as LoginStatus">Product List</a>
+<a href="" class="header_route">Add Product</a>
+
+</div>
+
+
+<div class="header__container__right">
+<div class="right__alignment">
+   <div > 
+       <span *ngIf="(LoginStatus | async) as LoginStatus">
+    <a class="header_route" *ngIf="(UserName | async) as UserName">{{UserName}}</a></span>
+    <a href="" class="header_route" *ngIf="!(LoginStatus | async) as LoginStatus">Show List</a>
+    <a routerLink="" class="header_route" *ngIf="(LoginStatus | async) as LoginStatus">Hide List</a>
+    <a routerLink="/Login" class="header_route" *ngIf="!(LoginStatus | async) as LoginStatus">LogIn</a>
+    <a  class="header_route" (click)="logout()" *ngIf="(LoginStatus | async) as LoginStatus" >Logout</a></div>
+ <!-- <app-userdet *ngIf="Loggied " [getUsername]="Usernamedis" ></app-userdet> 
+ *ngIf="!Loggied" -->
+ 
+</div>
+</div>
+
+
+</div>
+</header>

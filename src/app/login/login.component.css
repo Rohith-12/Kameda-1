@@ -1,0 +1,35 @@
+.login__input__label{
+float: left;
+width: 10%;
+text-align: right;
+padding-right: 5px;
+margin-top: 5px;
+
+}
+
+.login__input__element{
+    float: left;
+    width: 70%;
+}
+
+
+
+   .Login__bttn{
+
+    border-radius: 5px;
+    padding:8px;
+    border: 1px solid #ced4da;
+    margin-right: 5px;
+
+   }
+
+.login__input::after{
+    display: table;
+    content: "";
+    clear: both;
+
+}
+.other_compoentnet{
+
+    display: none;
+}

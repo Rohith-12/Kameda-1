@@ -1,0 +1,13 @@
+.toaster{
+
+    color: #ffff;
+    background-color: #dc3545;
+    
+    position: absolute;
+    right: 0;
+    top:50px;
+    padding: 10px;
+    width: 15%;
+    border-radius: 5px;
+
+}
